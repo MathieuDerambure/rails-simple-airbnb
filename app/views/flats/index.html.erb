@@ -1,0 +1,13 @@
+<tbody>
+    <% @flats.each do |flat| %>
+      <ul>
+        <li><%= flat.name %></li>
+        <li><%= flat.price_per_night %></li>
+        <li><%= flat.number_of_guests %></li>
+        <li><%= link_to "More info", flat %> </li>
+      </ul>
+    <% end %>
+  </tbody>
+
+<%= link_to "Add Flat", new_flat_path %>
+
